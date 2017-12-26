@@ -19,3 +19,7 @@ const menuTemplate = [
     ]
   }
 ];
+
+if (process.platform === 'darwin') {
+  menuTemplate.unshift({});
+}
