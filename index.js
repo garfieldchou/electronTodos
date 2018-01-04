@@ -34,7 +34,9 @@ const menuTemplate = [
     submenu: [
       {
         label: 'New Todo',
-        click () { createAddWindow(); }
+        click () {
+          if (!addWindow) createAddWindow();
+        }
       },
       {
         label: 'Clear Todos',
